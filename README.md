@@ -1,2 +1,1 @@
-# Frontend_Mentor
-Frontend exercises I do on the Frontend Mentor platform
+[1](Newbie/huddle-landing-page-with-single-introductory-section-master/index.html)
