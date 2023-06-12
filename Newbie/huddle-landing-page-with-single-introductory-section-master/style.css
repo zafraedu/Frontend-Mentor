@@ -1,38 +1,189 @@
-/*
-font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
 /****************************  RESET CSS  ************************************/
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,
-abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,
-strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,
-table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,
-figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,
-time,mark,audio,video {margin: 0;padding: 0;border: 0;font-size: 100%;
-  font: inherit;vertical-align: baseline;}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
-display: block;}
-body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}
-blockquote:before,blockquote:after,q:before,q:after {content: '';content: none;}
-table {border-collapse: collapse;border-spacing: 0;}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-display: block;}
-body {line-height: 1;}ol,ul {list-style: none;}blockquote,q {quotes: none;}
-blockquote:before,blockquote:after,q:before,q:after {content: "";content: none;}
-table {border-collapse: collapse;border-spacing: 0;}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 /****************************  GENERAL CONFIG  ********************************/
-*{
+* {
 	box-sizing: border-box;
 }
-body{
+
+body {
 	background-color: #674baf;
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
 }
-h1{
+
+h1 {
 	font-family: 'Poppins', sans-serif;
-	font-weight: 700;
+	font-weight: 800;
 	font-size: 1.5em;
 	line-height: 1.4em;
 
@@ -40,68 +191,179 @@ h1{
 
 }
 
+.container {
+	display: grid;
+	grid-template-areas:
+		"logo"
+		"img-main"
+		"main"
+		"social-midia";
+
+	background-image: url(./images/bg-mobile.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
 /****************************  HEADER  ****************************************/
-.header-aside{
+.header-aside {
 	background-image: url(./images/bg-mobile.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-header a img{
+
+.logo img {
 	margin: 1.8em;
 	width: 140px;
 }
 
 /****************************  ASIDE  *****************************************/
-aside img{
+aside img {
 	width: 100vmin;
 	padding: 2em 2em;
 }
 
 /****************************  MAIN  ******************************************/
-main{
+main {
 	text-align: center;
 }
-main p{
+
+main p {
 	font-size: 1em;
 	line-height: 1.5em;
 
 	margin: 0 1.8em;
 }
-main button{
+
+main button {
 	margin: 2em 1.8em;
 	padding: 1em 5em;
 	color: #674baf;
+	background-color: #fff;
 
 	border: none;
-	border-radius: 2em;
+	border-radius: 5em;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-
 }
+
+main button:hover {
+	background-color: #e882e8;
+	color: #fff;
+	cursor: pointer;
+}
+
 /****************************  SOCIAL MIDIA  **********************************/
-.social-midia{
+.social-midia {
 	display: flex;
 	justify-content: center;
 	font-size: 1em;
 
 	margin: 2em 1.8em;
 }
-.social-midia div{
+
+.social-midia div {
 	margin: 0 5px;
 	border: 1px solid #fff;
 	border-radius: 50%;
 }
-.social-midia div a i{
+
+.social-midia div a i {
 	padding: 0.5em;
+	color: #fff;
 }
-.social-midia .facebook a i{
+
+.social-midia .facebook a i {
 	padding: 0.5em 0.65em;
+}
+
+.social-midia div:hover,
+.social-midia div a i:hover {
+	border-color: #e882e8;
+	color: #e882e8;
 }
 
 /****************************  FOOTER  ****************************************/
 .attribution {
 	font-size: 11px;
 	text-align: center;
-  }
-  .attribution a {
+}
+
+.attribution a {
 	color: #3e52a3;
-  }
+}
+
+/****************************  MEDIA QUERYS  **********************************/
+@media screen and (min-width: 1440px) {
+
+	html {
+		width: 100%;
+		height: 100vmin;
+	}
+
+	body {
+		background-image: url(./images/bg-desktop.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		/* width: 100vmax; */
+	}
+
+	.container {
+		background-image: none;
+
+		grid-template-columns: 60% 40%;
+		grid-template-areas:
+			"logo ."
+			"img-main main"
+			". social-midia";
+	}
+
+	.logo {
+		grid-area: logo;
+	}
+
+	.logo img {
+		margin: 3em 4em;
+		width: 220px;
+	}
+
+	aside {
+		grid-area: img-main;
+	}
+
+	aside img {
+		padding: 2em 4em;
+		padding-right: 0;
+	}
+
+	main {
+		grid-area: main;
+		text-align: left;
+
+	}
+
+	main h1 {
+		margin: 2.5em 4em 1em 1em;
+		font-size: 2.2em;
+	}
+
+	main p {
+		margin-right: 4em;
+		font-size: 1.1em;
+	}
+
+	main button {
+		padding: 1em 3em;
+		font-size: 1.1em;
+	}
+
+	.social-midia {
+		grid-area: social-midia;
+		justify-content: end;
+		font-size: 1.3em;
+		margin: 0 4em 1em 0;
+	}
+
+	.social-midia div {
+		margin: 0 10px;
+		border-radius: 50%;
+	}
+}
