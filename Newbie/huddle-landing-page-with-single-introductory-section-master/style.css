@@ -292,6 +292,31 @@ main button:hover {
 }
 
 /****************************  MEDIA QUERYS  **********************************/
+@media screen and (min-width: 800px) {
+	body {
+		background-image: url(./images/bg-desktop.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.container {
+		background-image: none;
+	}
+
+	aside {
+		justify-self: center;
+	}
+
+	aside img {
+		padding: 2em 6em;
+	}
+
+	main p {
+		margin: 0;
+		padding: 1em 10em;
+	}
+}
+
 @media screen and (min-width: 1440px) {
 
 	html {
@@ -299,16 +324,7 @@ main button:hover {
 		height: 100vmin;
 	}
 
-	body {
-		background-image: url(./images/bg-desktop.svg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		/* width: 100vmax; */
-	}
-
 	.container {
-		background-image: none;
-
 		grid-template-columns: 60% 40%;
 		grid-template-areas:
 			"logo ."
@@ -346,8 +362,11 @@ main button:hover {
 	}
 
 	main p {
-		margin-right: 4em;
 		font-size: 1.1em;
+
+		margin: 0 1.8em;
+		margin: 0 2em;
+		padding: 0;
 	}
 
 	main button {
