@@ -1,3 +1,3 @@
 | Grade | Project |
 | ----- | ------- |
-| [Newbite](./Newbite) | [1]() |
+| [Newbite](https://github.com/zafraedu/Frontend_Mentor/tree/main/Newbie) | [1]() |
