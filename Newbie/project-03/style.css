@@ -177,7 +177,7 @@ table {
 	--blue: #4f7df3;
 	--blue-transparent: rgba(79, 125, 243, 0.3);
 	--gray: #969696;
-	--gray-transparent: rgba(150, 150, 150, 0.3);
+	--gray-transparent: rgba(150, 150, 150, 0.5);
 }
 
 * {
@@ -195,10 +195,8 @@ body {
 .container {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 
 	margin: 3em 1.5em;
-
 }
 
 /****************************  HEADER  ****************************************/
@@ -252,7 +250,6 @@ main form input[type="email"] {
 
 main form input[type="email"]::placeholder {
 	color: var(--gray-transparent);
-
 }
 
 main form input[type="submit"] {
@@ -278,14 +275,26 @@ footer {
 
 footer .social-midia {
 	display: flex;
-	margin: 2em 0;
+	margin: 3em 0 1.5em 0;
+}
+
+footer .social-midia div {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border: 1px solid var(--blue-transparent);
+	border-radius: 50%;
+	margin: 0 0.4em;
+
 }
 
 footer .social-midia div a {
-	margin: 0 0.5em;
+	position: relative;
 
 	color: var(--blue);
-	font-size: small;
+	font-size: smaller;
+	top: 4px;
+	right: -7px;
 }
 
 footer p {
